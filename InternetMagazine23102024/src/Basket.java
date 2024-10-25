@@ -1,6 +1,4 @@
-
 public class Basket {
-
     private static String items = "";
     private static int totalPrice = 0;
 
@@ -17,7 +15,6 @@ public class Basket {
 
     public static void add(String name, int price) {
         items = items + "\n" + name + " - " + price;
-        totalPrice = totalPrice  + price;
     }
 
     public static void clear() {
@@ -33,8 +30,6 @@ public class Basket {
         System.out.println(title);
         if (items.isEmpty()) {
             System.out.println("Basket is empty");
-        }
-        else {
             System.out.println(items);
         }
     }
