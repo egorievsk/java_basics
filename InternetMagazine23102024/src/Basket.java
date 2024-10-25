@@ -2,6 +2,7 @@ public class Basket {
     private static String items = "";
     private static int totalPrice = 0;
 
+
     public static void main(String[] args) {
         add("Sousage", 76);
         add("Milk", 55);
@@ -30,6 +31,8 @@ public class Basket {
         System.out.println(title);
         if (items.isEmpty()) {
             System.out.println("Basket is empty");
+            System.out.println(items);
+        } else {
             System.out.println(items);
         }
     }
