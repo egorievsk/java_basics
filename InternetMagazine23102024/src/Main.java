@@ -16,4 +16,8 @@ public class Main {
 
     //TODO: если предполагается работа с методом через объекты, то такой метод должен быть не статический
     //TODO: если работа с методами предполагается за пределами объекта и работает с переменными класса, то метод должен быть статическим
+
+
+    DeliveryOrder  deliveryOrder = new DeliveryOrder(Pedestrian.PEDESTRIAN,Fragile.NO,Cold.YES);
+
 }
