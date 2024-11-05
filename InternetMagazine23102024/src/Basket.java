@@ -1,10 +1,14 @@
 public class Basket {
-    private String items = "";
+    private String items;
     private int totalPrice = 0;
     private int limit;
 
+    private static int count = 0; //TODO: статическая переменная доступна в самом классе, вызывается при обращении к классу.
+
     //TODO: конструктор нужен для инциализации переменных b
     public Basket() {
+        increaseCount(1);
+        items = "Список товаров:";
         limit = 100000;
     }
 
@@ -17,6 +21,14 @@ public class Basket {
         this();
         this.items = this.items + items;
         this.totalPrice = totalPrice;
+    }
+
+    public static int getCount() {
+        return count;
+    }
+
+    public static void increaseCount(int count) {
+        Basket.count = Basket.count + count;
     }
 
     //TODO: перегрузка свойство создавать одноименные методы с разной сигнатурой
