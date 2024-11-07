@@ -1,3 +1,5 @@
+import java.time.Period;
+
 public class Basket {
     private String items;
     private int totalPrice = 0;
@@ -5,6 +7,14 @@ public class Basket {
 
     private static int count = 0; //TODO: статическая переменная доступна в самом классе, вызывается при обращении к классу.
 
+    private static int timeoute = getTimeOut();
+
+    private static int getTimeOut() {
+        int secoundsInHour = 3600;
+        int hoursInDays = 24;
+        int daysInWeek  = 7;
+        int daysInMonth = 30;
+    }
     //TODO: конструктор нужен для инциализации переменных b
     public Basket() {
         increaseCount(1);
