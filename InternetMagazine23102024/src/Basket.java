@@ -9,6 +9,7 @@ public class Basket {
 
     private static int timeoute = getTimeOut();
 
+    //TODO: статическая инициализация
     private static int getTimeOut() {
         int secoundsInHour = 3600;
         int hoursInDays = 24;
