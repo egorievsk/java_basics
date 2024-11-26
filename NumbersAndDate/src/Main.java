@@ -64,13 +64,18 @@ public class Main {
         //числа double точнее float
         System.out.println((float) Math.PI);
 
-        
+
         double value11 = 2.0 - 1.1;
         System.out.println(value11);
         double value12 = 0.9;
         System.out.println(value11 - value12);
         boolean comparisson = Math.abs(value11 - value12) < EPSILON;
         System.out.println(comparisson);
+
+        long value13 = 100000000000000000L;
+        double value14 = 100000000000000100.0;
+        System.out.println(value13);
+        System.out.println(value14);
 
 
 
