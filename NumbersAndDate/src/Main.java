@@ -1,5 +1,6 @@
 import java.math.BigDecimal;
 import java.math.BigInteger;
+import java.sql.SQLOutput;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
@@ -156,6 +157,16 @@ public class Main {
         //разница дат
         System.out.println(time1.until(time2, ChronoUnit.HOURS));
 
+        //МЕТКА ВРЕМЕНИ timestamp
+
+        long start = System.currentTimeMillis();
+        String line = "";
+        for (int i = 0; i < 10000; i++) {
+            line += Math.random();
+        }
+
+        System.out.println(System.currentTimeMillis() - start);
+        
 
 
 
