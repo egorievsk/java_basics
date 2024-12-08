@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6d36cdd2-08fc-47fc-b34e-2d50b3ded267" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Line.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Line.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,12 +60,16 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Debug",
+    "Application.Main.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/egori/IdeaProjects/ForCycles",
+    "last_opened_file_path": "C:/Users/egori/IdeaProjects/StringExperiments",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
@@ -103,15 +108,6 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>152</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="chars.length" />
@@ -122,6 +118,10 @@
         <watch expression="haracter.isLetterOrDigit(ty)" />
         <watch expression="Character.isIdeographic(ty)" />
         <watch expression="text9.getBytes()" />
+        <watch expression="header.indexOf(charsetStr)" />
+        <watch expression="charsetStr.length()" />
+        <watch expression="header.indexOf(charsetStr) + charsetStr.length()" />
+        <watch expression="header.indexOf(';',start)" />
       </configuration>
     </watches-manager>
   </component>

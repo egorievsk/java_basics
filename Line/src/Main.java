@@ -1,10 +1,13 @@
+import org.jetbrains.annotations.NotNull;
 import org.w3c.dom.ls.LSOutput;
 
+import java.io.StreamTokenizer;
 import java.io.UnsupportedEncodingException;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.sql.SQLOutput;
 import java.time.LocalDate;
+import java.util.StringJoiner;
 
 public class Main {
     public static void main(String[] args) {
@@ -152,6 +155,79 @@ public class Main {
         String text9 = "Hello всем";
         String encoding = new String(text9.getBytes(), StandardCharsets.US_ASCII);
         System.out.println(encoding);
+
+        //МЕТОДЫ РАБОТЫ С ПОДСТРОКАМИ
+
+        //метод indexOf("подстрока")
+        //он же но с порядковым номером символа с которого надо искать (не включая сам порядковый номер)
+        //метод lastIndexOf("substring") - аналогичен indexOf() но ищет с конца строки
+        //метод substring(начальный порядковый номер, конечный порядковый номер символа)
+
+        String header1 = "Content-Type: text/html; charset=utf-8;";
+        String header2 = "Content-Type: text/html; charset=Windows-1251;";
+        String header3 = "Content-Type: text/html; charset=ISO-8859-1;";
+
+        String header4= "Content-Type: text/html;";
+        String header5 = "Content-Type: text/html; charset=";
+        String header6 = "Content-Type: text/html; charset=;";
+
+        System.out.println(getEncoding(header1));
+        System.out.println(getEncoding(header2));
+        System.out.println(getEncoding(header3));
+        System.out.println(getEncoding(header4));
+        System.out.println(getEncoding(header5));
+        System.out.println(getEncoding(header6));
+
+        String name3 = "Alexey";
+        String name4 = "Georgy";
+        String name5 = "Alexey";
+
+        //ОБЪЕДИНЕНИЕ СТРОК
+        //метод StringJoiner("строка, символ, набор символов разделителей")
+        //метод add("добавляемая строка") класса StringJoiner
+
+        //класс String так же имеет метод join
+
+        StringJoiner joiner = new StringJoiner(", ");
+        joiner.add(name3);
+        joiner.add(name4);
+        joiner.add(name5);
+
+        System.out.println(joiner);
+
+        String list = String.join(", ",name3, name4,name5);
+        System.out.println(list);
+
+        //форматирование строк
+        String name6 = "Максим";
+        int birthYear = 1986;
+        //нужно вывести в формате:
+        //{"name" : "Максим", "birthYear" = "1986"}
+        String template = "{\"name\" : \"%s\", \"birthYear\": \"%d\"}";
+        String result = String.format(template,name,birthYear);
+        System.out.println(result);
+        System.out.printf(template,name,birthYear);
+
+        System.out.println();
+
+        String result1 = "{\"name\""; //пример экранирующего символа для вывода кавычек в тексте
+        System.out.println(result1);
+
+
+
+    }
+
+    public static String getEncoding(@NotNull String header) {
+        String charsetStr = "charset=";
+        int start = header.indexOf(charsetStr);
+        int end = header.indexOf(';',start);
+        if (start < 0 || end < 0) {
+            return "";
+        }
+
+        String encoding = header.substring(start + charsetStr.length(), end);
+
+        return encoding;
 
     }
 }
