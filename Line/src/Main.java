@@ -1,13 +1,11 @@
-import org.jetbrains.annotations.NotNull;
 import org.w3c.dom.ls.LSOutput;
 
-import java.io.StreamTokenizer;
-import java.io.UnsupportedEncodingException;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
-import java.sql.SQLOutput;
 import java.time.LocalDate;
 import java.util.StringJoiner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
@@ -213,11 +211,94 @@ public class Main {
         String result1 = "{\"name\""; //пример экранирующего символа для вывода кавычек в тексте
         System.out.println(result1);
 
+        //ПУЛ СТРОК
+        //String Pool
+        String name7 = "Alex";
+        String name9 = "Alex";  //при  сравнении строк name7 name9 будут равны
+        String name8 = new String("Alex");
+        System.out.println(name7 == name8); //а name7 и name8 не будут, т.к. name8 создана при помощи конструктора new String("какой то текст")
+        System.out.println(name7 == name8.intern());    //метод intern() позволяет сравнить сравнить значение переменной полученной присваиванием и переменной созданной конструктором new String
+
+
+        //9.7. РЕГУЛЯРНЫЕ ВЫРАЖЕНИЯ
+
+        //замена фрагментов строк на другие при помощи регулярного выражения "формата" [^0-9] [^0-9a-z] и метода replaceAll([^ф,о-т], "строка")
+        //значок ^ обозначает что все символы кроме цифр.
+        //regex - выражение позволяющее выбрать нужные или убрать ^, отфильтровать ненужные символы
+        String phone1 = "+7 903 712-37-54";
+        String phone2 = "+7 (903) 968-60-45";
+        String phone3 = "7999-666-66-66";
+        String phone4 = "7(903)9616245";
+        String tr = "try";
+        System.out.println(formatPhoneNumber(phone1));
+        System.out.println(formatPhoneNumber(phone2));
+        System.out.println(formatPhoneNumber(phone3));
+        System.out.println(formatPhoneNumber(phone4));
+        System.out.println(formatPhoneNumber(tr));
+
+        //Разбиение строк на фрагменты
+
+        String text10 = "I know something about it";
+        String[] words = text10.split("\\s"); //"\s" - обозначает любой пробельный символ
+        for(String word : words) {
+            System.out.println(word);
+        }
+        System.out.println(System.lineSeparator());
+
+        String text11 = "I  know\tsomething  about\n it";
+        String[] words1 = text11.split("\\s+");
+        for (int i = 0; i <= words1.length -1; i++) {
+            System.out.println(words1[i]);
+        }
+
+        //Проверка соответствия строк шаблону
+        String numberAvto = "А674МР197";
+        String lettersRange = "[АВЕКМНОРСТУХ]";
+        String regex = lettersRange + "[0-9]{3}" + lettersRange + "{2}[0-9]{2,3}";
+        System.out.println(numberAvto.matches(regex));
+
+        System.out.println(System.lineSeparator());
+
+        //Поиск фрагментов строк, соответствующих шаблону
+
+        String text12 = "Алексей, добрый день!\nМой гитхаб — https://github.com/, а также ссылка на мой персональный сайт — https://www.skillbox.ru/\nЕсли возникнут вопросы, пишите мне напрямую. Я всегда доступен";
+        String regex1 = "https://[^,\\s]+"; //означает что могут встречаться любые символы кроме пробельного и запятой
+        Pattern pattern = Pattern.compile(regex1);
+
+        Matcher matcher = pattern.matcher(text12);
+        while(matcher.find()) {
+            int start1 = matcher.start();
+            int end = matcher.end();
+            System.out.println(text12.substring(start1,end));
+        }
+
+        System.out.println(System.lineSeparator());
+
+        //Маски в регулярных выражениях
+
+        String text14 = "Дмитрий сообщил следующее: «Я вернусь в 12:40 и, будьте добры, подготовьте к этому времени все документы!» На что Анна ему ответила: «А документы-то так и не привезли». Дмитрий удивлённо посмотрел на неё и сказал: «Ну и ладно», — вздохнул, махнул рукой и удалился.";
+        String regex2 = "«([^»]+)»"; //в круглые скобки помещено содержимое цитаты. Отличается от регулярного выражения наличием скобок
+        Pattern pattern1 = Pattern.compile(regex2);
+        Matcher matcher1 = pattern1.matcher(text14);
+        while(matcher1.find()) {
+            String citation = matcher1.group(1);
+            System.out.println(citation);
+        }
+
+
+
+
+
 
 
     }
 
-    public static String getEncoding(@NotNull String header) {
+    public static String formatPhoneNumber(String phone) {
+        String regex = "[^0-9a-z]"; // регулярное выражение
+        return phone.replaceAll(regex, "");
+    }
+
+    public static String getEncoding(String header) {
         String charsetStr = "charset=";
         int start = header.indexOf(charsetStr);
         int end = header.indexOf(';',start);

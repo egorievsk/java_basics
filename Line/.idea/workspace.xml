@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6d36cdd2-08fc-47fc-b34e-2d50b3ded267" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Line.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Line.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +59,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Run",
+    "Application.Main.executor": "Debug",
     "Downloaded.Files.Path.Enabled": "false",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -110,18 +109,7 @@
   <component name="XDebuggerManager">
     <watches-manager>
       <configuration name="Application">
-        <watch expression="chars.length" />
-        <watch expression="chars[i]" />
-        <watch expression="Character.valueOf(ty)" />
-        <watch expression="Character.valueOf(ty).charValue()" />
-        <watch expression="Character.toString(ty)" />
-        <watch expression="haracter.isLetterOrDigit(ty)" />
-        <watch expression="Character.isIdeographic(ty)" />
-        <watch expression="text9.getBytes()" />
-        <watch expression="header.indexOf(charsetStr)" />
-        <watch expression="charsetStr.length()" />
-        <watch expression="header.indexOf(charsetStr) + charsetStr.length()" />
-        <watch expression="header.indexOf(';',start)" />
+        <watch expression="matcher.find()" />
       </configuration>
     </watches-manager>
   </component>
