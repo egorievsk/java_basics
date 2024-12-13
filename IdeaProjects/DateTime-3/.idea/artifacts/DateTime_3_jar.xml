@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="DateTime-3:jar">
+    <output-path>$PROJECT_DIR$/out</output-path>
+    <root id="archive" name="DateTime-3.jar">
+      <element id="module-output" name="DateTime-3" />
+    </root>
+  </artifact>
+</component>

@@ -1,4 +1,6 @@
+import java.sql.Array;
 import java.sql.SQLOutput;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -136,5 +138,31 @@ public class Main {
         //пример трёхмерного массива
         //например для хранения данных о температуре на разных этажах, разных комнатах разное время суток
         int[][][] numbers3 = new int[10][][];
+
+        //Класс Arrays
+        System.out.println("\n");
+        System.out.println("Класс Arrays");
+        System.out.println("\n");
+        int[] values = {234, 56, 88, 23969};
+        Arrays.sort(values);
+        System.out.println(Arrays.toString(values));
+
+        //сравнение массивов
+        int[] a = {5,6,7,10};
+        int[] b = {5,6,7};
+        System.out.println(Arrays.equals(a,b));
+        System.out.println(Arrays.compare(a,b)); //степень отличия одинаковых массивов 0
+        //копирование части массива
+        int[] values1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int[] firstElements = Arrays.copyOf(values1, 5);
+        System.out.println(Arrays.toString(firstElements));
+        int[] fragment = Arrays.copyOfRange(values1, 2, 4);
+        System.out.println(Arrays.toString(fragment));
+
+        int[] values2 = new int[20];
+        Arrays.fill(values2, -1);
+        System.out.println(Arrays.toString(values2));
+
+
     }
 }

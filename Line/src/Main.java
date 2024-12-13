@@ -238,8 +238,8 @@ public class Main {
 
         //Разбиение строк на фрагменты
 
-        String text10 = "I know something about it";
-        String[] words = text10.split("\\s"); //"\s" - обозначает любой пробельный символ
+        String text10 = "I know something about it; isn't";
+        String[] words = text10.split("[;?][\\s]"); //"\s" - обозначает любой пробельный символ
         for(String word : words) {
             System.out.println(word);
         }

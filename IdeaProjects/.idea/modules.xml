@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Cofeemachine/Cofeemachine.iml" filepath="$PROJECT_DIR$/Cofeemachine/Cofeemachine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ComputerInfo/ComputerInfo.iml" filepath="$PROJECT_DIR$/ComputerInfo/ComputerInfo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DateAndTime/DateAndTime.iml" filepath="$PROJECT_DIR$/DateAndTime/DateAndTime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DateTime/DateTime.iml" filepath="$PROJECT_DIR$/DateTime/DateTime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DateTime-3/DateTime-3.iml" filepath="$PROJECT_DIR$/DateTime-3/DateTime-3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FilingStation/FilingStation.iml" filepath="$PROJECT_DIR$/FilingStation/FilingStation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/IdeaProjects.iml" filepath="$PROJECT_DIR$/.idea/IdeaProjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson2/Lesson2.iml" filepath="$PROJECT_DIR$/Lesson2/Lesson2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/untitled/untitled.iml" filepath="$PROJECT_DIR$/untitled/untitled.iml" />
+      <module fileurl="file://$PROJECT_DIR$/untitled1/untitled1.iml" filepath="$PROJECT_DIR$/untitled1/untitled1.iml" />
+    </modules>
+  </component>
+</project>
