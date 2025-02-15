@@ -66,6 +66,6 @@ public class Main {
         System.out.println(bus7.getClass() + "@" + Integer.toHexString(bus.hashCode()));
         System.out.println(bus7);
 
-        //testlmnblfdnglknflkn
+        //тест 2
     }
 }
