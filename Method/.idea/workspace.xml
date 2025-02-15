@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d53b3b88-d522-4fdc-871d-8c35f10b987c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../2.11 Booleans/2.11 Booleans.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.11 Booleans/Booleans/Booleans.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.9 RoadCamera/2.9 RoadCamera.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2.9 RoadCamera/RoadCamera/RoadCamera.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AgeComparator/AgeComparator.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cofeemachine/Cofeemachine.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ComputerInfo/ComputerInfo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cycles/Cycles.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cycles2024/Cycles2024.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DateAndTime/DateAndTime.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DateTime-3/DateTime-3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DateTime/DateTime.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Demo/Demo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DriverlessCar/DriverlessCar.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EncapsulationExperiment/EncapsulationExperiment.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EncapsulationExperiment/src/ChildBankAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EncapsulationExperiment/src/Country.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EncapsulationExperiment/src/SixAcres.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EncapsulationExperiments/EncapsulationExperiments.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FactorialCalculator/FactorialCalculator.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FeelingStation/FeelingStation.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FilingStation/FilingStation.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ForCycles/ForCycles.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GearBox2024/GearBox2024.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GearBox2024/src/GearBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GuessTheNumber/GuessTheNumber.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HTML/HTML.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IdeaProjects/Cofeemachine/Cofeemachine.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IdeaProjects/ComputerInfo/ComputerInfo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IdeaProjects/DateAndTime/DateAndTime.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IdeaProjects/DateTime-3/DateTime-3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IdeaProjects/DateTime/DateTime.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IdeaProjects/FilingStation/FilingStation.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IdeaProjects/Lesson2/Lesson2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IdeaProjects/untitled/untitled.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IdeaProjects/untitled1/untitled1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Immutability/Immutability.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InternetMagazine2024/InternetMagazine2024.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InternetMagazine2024/src/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InternetMagazine2024/src/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../InternetMagazine2024/src/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 4.02.1/Lesson 4.02.1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 4.02.1/src/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 4.02.1/src/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 4.02.1/src/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 4.02.2/Lesson 4.02.2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson2/Lesson2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_Cycles/Lesson_Cycles.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson_Method/Lesson_Method.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Method.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Method.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Printer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ObjectsAndMethods.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RoadController/RoadController.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SwimmingPool/SwimmingPool.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../internetMagzin/internetMagzin.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled/untitled.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InternetMagazine2024/src/Basket.java" beforeDir="false" afterPath="$PROJECT_DIR$/../InternetMagazine2024/src/Basket.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2fxRuzVgnBU9miNvFosdD2WkoWi" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Daniil/IdeaProjects/Method"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d53b3b88-d522-4fdc-871d-8c35f10b987c" name="Changes" comment="" />
+      <created>1714740970789</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1714740970789</updated>
+    </task>
+    <servers />
+  </component>
+</project>

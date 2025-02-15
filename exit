@@ -1,0 +1,186 @@
+[33mcommit 929130510497c4e568eaed9834aaced4ae5e76aa[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Alexander Kopylov <sach-egorievsk@yandex.ru>
+Date:   Fri Dec 13 20:54:28 2024 +0300
+
+    Arrays_10.5
+
+[33mcommit e302ba1bf78bc26e96cd0792f4e57c8a2e99d49e[m
+Author: Alexandr Kopylov <sach-egorievsk@yandex.ru>
+Date:   Fri Dec 13 14:42:05 2024 +0300
+
+    Arrays_10.4
+
+[33mcommit d469fe3c556848195ca5cb0da33ac75b5bd56b4a[m
+Author: Alexandr Kopylov <sach-egorievsk@yandex.ru>
+Date:   Wed Dec 11 17:32:40 2024 +0300
+
+    Arrays_10.3
+
+[33mcommit e898e830b8182117ccf7bf22ebe0039296d3ea8e[m
+Author: Alexandr Kopylov <sach-egorievsk@yandex.ru>
+Date:   Wed Dec 11 14:45:10 2024 +0300
+
+    Arrays_10.2
+
+[33mcommit fe9753bcaba88fb8f71141dcf519f13c5a66c8c7[m
+Author: Alexandr Kopylov <sach-egorievsk@yandex.ru>
+Date:   Mon Dec 9 15:55:08 2024 +0300
+
+    Line_9.7
+
+[33mcommit bfebe28bd6fa79f93c36e5af7ea8a54d693d368e[m
+Author: Alexandr Kopylov <sach-egorievsk@yandex.ru>
+Date:   Sun Dec 8 16:48:27 2024 +0300
+
+    Line_9.5
+
+[33mcommit bdf7988e9139e299572865ec779ae5879a5b8ff2[m
+Author: Alexandr Kopylov <sach-egorievsk@yandex.ru>
+Date:   Sat Dec 7 15:29:26 2024 +0300
+
+    Line_9.4
+
+[33mcommit b8fe7ad7ab394342ed2f2088241620301dc8af3a[m
+Author: Alexandr Kopylov <sach-egorievsk@yandex.ru>
+Date:   Fri Dec 6 17:58:01 2024 +0300
+
+    Lines_9/3
+
+[33mcommit 1cc61695dc1ac51b771579d40acec0d2aee00a8c[m
+Author: Alexandr Kopylov <sach-egorievsk@yandex.ru>
+Date:   Fri Dec 6 17:49:21 2024 +0300
+
+    start
+
+[33mcommit e2c421eb070faadd53f6c2e2642a74e337de57f2[m
+Author: Alexandr Kopylov <sach-egorievsk@yandex.ru>
+Date:   Thu Nov 28 15:47:53 2024 +0300
+
+    st
+
+[33mcommit b99dac889ba76835ea6abd5c5f8ff39009de8c1b[m
+Author: Alexander Kopylov <sach-egorievsk@yandex.ru>
+Date:   Wed Nov 27 14:56:21 2024 +0300
+
+    N&D_8.7
+
+[33mcommit a44c16d5e516d848ab23ab0edb90f0beee4a3568[m
+Author: Alexander Kopylov <sach-egorievsk@yandex.ru>
+Date:   Tue Nov 26 17:14:39 2024 +0300
+
+    0
+
+[33mcommit 1c73d86866f4b74cb92888bffd6133a0d1d9d1cd[m
+Author: Alexander Kopylov <sach-egorievsk@yandex.ru>
+Date:   Tue Nov 26 17:01:28 2024 +0300
+
+    N&D_8.5
+
+[33mcommit 3ef79f7f5ac7edfed01f9ca8031dfc0be7b3e78e[m
+Author: Alexander Kopylov <sach-egorievsk@yandex.ru>
+Date:   Fri Nov 8 16:04:16 2024 +0300
+
+    Primitives_7.5
+
+[33mcommit d994c471fa4d0b310c9562bd1350179b687f7b18[m
+Author: Alexander Kopylov <sach-egorievsk@yandex.ru>
+Date:   Fri Nov 8 16:02:51 2024 +0300
+
+    IntM6.7
+
+[33mcommit d8c1f3bd4ae75c6826e444c0b00858cfa7d8b7b1[m
+Author: Alexander Kopylov <sach-egorievsk@yandex.ru>
+Date:   Thu Nov 7 11:24:25 2024 +0300
+
+    IntM6.5_static_inizialisation
+
+[33mcommit 8d065a0de2e80efdb291428bd39cedbbac12f888[m
+Author: Alexander Kopylov <sach-egorievsk@yandex.ru>
+Date:   Tue Nov 5 15:16:45 2024 +0300
+
+    IntM_6.5
+
+[33mcommit a7a3627fa4f9b138f796111890da51025a32396e[m[33m ([m[1;32morigin[m[33m)[m
+Author: Alexander Kopylov <sach-egorievsk@yandex.ru>
+Date:   Tue Nov 5 14:49:22 2024 +0300
+
+    Lesson_constant_IntM_6.4
+
+[33mcommit 081237ec1a26fe38fd6bf63244d5f54a6431891a[m
+Author: Alexander Kopylov <sach-egorievsk@yandex.ru>
+Date:   Tue Nov 5 14:46:56 2024 +0300
+
+    IntM_6.4_static variable_static_methods_constants
+
+[33mcommit 4efe334829ced60cd86d4a3f73d919a4f0b1ed02[m
+Author: Alexander Kopylov <sach-egorievsk@yandex.ru>
+Date:   Tue Nov 5 13:11:17 2024 +0300
+
+    IntM6
+
+[33mcommit cc777510355c3341f9cf8f52d3fa19c0c680f2a0[m
+Author: Alexander Kopylov <sach-egorievsk@yandex.ru>
+Date:   Tue Oct 29 17:48:05 2024 +0300
+
+    intM5.5_village
+
+[33mcommit 1c575cd9a01c5265079921bf9a51151b55af4ff9[m
+Author: Alexander Kopylov <sach-egorievsk@yandex.ru>
+Date:   Tue Oct 29 15:13:29 2024 +0300
+
+    intM5_vilage
+
+[33mcommit c3a461236ff2707cf51b091ead97381dd5265624[m[33m ([m[1;33mtag: [m[1;33mintM4[m[33m)[m
+Author: Alexander Kopylov <sach-egorievsk@yandex.ru>
+Date:   Fri Oct 25 15:24:56 2024 +0300
+
+    intM4_vilage
+
+[33mcommit 4ccc6739844a49be98523b7cd4fc8e42b668be44[m
+Author: Alexander Kopylov <sach-egorievsk@yandex.ru>
+Date:   Fri Oct 25 14:57:49 2024 +0300
+
+    intM3
+
+[33mcommit c515e4d122481b8833aa7e21b6ecfd7de7043123[m
+Author: Alexander Kopylov <sach-egorievsk@yandex.ru>
+Date:   Fri Oct 25 14:23:46 2024 +0300
+
+    intM2
+
+[33mcommit 7c3d24e32fdc3e85e60b6ed89581c9e778edff60[m
+Merge: f682d3f 29d3424
+Author: Alexander Copylov <120942867+egorievsk@users.noreply.github.com>
+Date:   Fri Oct 25 14:30:00 2024 +0300
+
+    Merge pull request #1 from egorievsk/HEAD
+    
+    nove1
+
+[33mcommit f682d3fabf7198bc80342e4d84a140be5cdacc65[m
+Author: Alexander Copylov <120942867+egorievsk@users.noreply.github.com>
+Date:   Wed Oct 23 16:02:41 2024 +0300
+
+    Update README.md
+    
+    1
+
+[33mcommit 66df1c92851ca8e49988befc17864b2a811f8913[m
+Author: Alexander Copylov <120942867+egorievsk@users.noreply.github.com>
+Date:   Wed Oct 23 16:02:00 2024 +0300
+
+    Create README.md
+    
+    readmy
+
+[33mcommit 29d34240e5a7fa75b456db74b2e9ce61891b3ebf[m
+Author: Alexander Kopylov <sach-egorievsk@yandex.ru>
+Date:   Wed Oct 23 13:17:55 2024 +0300
+
+    nove
+
+[33mcommit b2d7bdc2c2e90f5cc18b972330ee5a4ae4ed2e59[m
+Author: Alexander Kopylov <sach-egorievsk@yandex.ru>
+Date:   Wed Oct 23 13:13:05 2024 +0300
+
+    nove

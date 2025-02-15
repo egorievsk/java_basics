@@ -1,0 +1,19 @@
+Index: src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import java.util.Scanner;\r\n\r\npublic class Main {\r\n    public static void main(String[] args) {\r\n        int i = 5;\r\n        double h = 32435412;\r\n        String j = \"\";\r\n        long g = (long) 3546543212152432541.00;\r\n        Object st = new ask(25);\r\n        //st.po(16);\r\n        Object rt = new ask(\"poi\");\r\n        Object ty = new ask(45,\"dsikfhjg\");\r\n        System.out.println(formatString(st));\r\n        System.out.println(formatString(25));\r\n        System.out.println(formatString(25.89));\r\n        System.out.println(formatString(203459899912666666687978979453686.89));\r\n\r\n        do {\r\n            i = i +5;\r\n\r\n        } while (i == 10);\r\n    }\r\n\r\n    static String formatString(Object o) {\r\n        String result = \"\";\r\n\r\n        return switch (o) {\r\n            case Integer i -> String.format(\"int%d\", i);\r\n            case Long d -> String.format(\"long%d\", d);\r\n            case Double f -> String.format(\"double%f\", f);\r\n            default -> o.toString();\r\n        };\r\n\r\n//        if (o instanceof  Integer) {\r\n//            result = String.format(\"int %d\", (Integer)o);\r\n//        } else if (o instanceof String) {\r\n//            result = String.format(\"String %s\", (String)o);\r\n//        }\r\n\r\n        //return  result;\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Main.java b/src/Main.java
+--- a/src/Main.java	(revision d66241453ba99d75c360c8e49d9159a6dc50ce6f)
++++ b/src/Main.java	(date 1713370387057)
+@@ -3,7 +3,7 @@
+ public class Main {
+     public static void main(String[] args) {
+         int i = 5;
+-        double h = 32435412;
++        double h = 3243541;
+         String j = "";
+         long g = (long) 3546543212152432541.00;
+         Object st = new ask(25);
