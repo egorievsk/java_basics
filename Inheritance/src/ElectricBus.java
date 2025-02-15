@@ -1,5 +1,7 @@
-public class ElectricBus extends Bus{
+public class ElectricBus extends Bus {
     private final double minimalTankFullnessRate;
+    private static final double degradationRate = 0.0001;
+    private static final  double minrateTodegrate = 0.1;
     private static int count;
 
     public ElectricBus(double consumptionRate, double minimalTankFullnessRate) {
@@ -9,7 +11,15 @@ public class ElectricBus extends Bus{
     }
 
     @Override
-    public int powerReserve() {
+    public void refuel(double tankRate) {
+        super.refuel(tankRate);
+        if (tankRate > minrateTodegrate) {
+            consumptionRate += degradationRate;
+        }
+    }
+
+    @Override
+    int powerReserve() {
         double remainingRate = getTankFullnessRate() - minimalTankFullnessRate;
         if(remainingRate <= 0) {
             return 0;

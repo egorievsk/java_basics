@@ -3,7 +3,7 @@ import java.util.Objects;
 public class Bus {
 
     private double tankFullnessRate; //rate of tank fullness, 0-1
-    private final double consumptionRate; //rate (0-1) per 1km
+    protected double consumptionRate; //rate (0-1) per 1km
 
     private static int count;
 
@@ -37,7 +37,7 @@ public class Bus {
         tankFullnessRate = total > 1 ? 1 : total;
     }
 
-    public int powerReserve() {
+    int powerReserve() {
         return (int) (tankFullnessRate / consumptionRate);
     }
 
