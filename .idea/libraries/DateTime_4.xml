@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="DateTime-4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/DateTime-3/out/DateTime-3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,1210 @@
+Index: ../InternetMagazine23102024/InternetMagazine23102024.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../InternetMagazine23102024/InternetMagazine23102024.iml b/../InternetMagazine23102024/InternetMagazine23102024.iml
+new file mode 100644
+--- /dev/null	(date 1729672868575)
++++ b/../InternetMagazine23102024/InternetMagazine23102024.iml	(date 1729672868575)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: ../Method/src/User.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../Method/src/User.java b/../Method/src/User.java
+new file mode 100644
+--- /dev/null	(date 1731942647613)
++++ b/../Method/src/User.java	(date 1731942647613)
+@@ -0,0 +1,17 @@
++public class User {
++    public String name;
++    public int age;
++
++    User (String name, int age) {
++        this.name = name;
++        this.age = age;
++    }
++
++    public String getName() {
++        return name;
++    }
++
++    public int getAge() {
++        return age;
++    }
++}
+Index: ../Method/src/Order.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../Method/src/Order.java b/../Method/src/Order.java
+new file mode 100644
+--- /dev/null	(date 1731942633716)
++++ b/../Method/src/Order.java	(date 1731942633716)
+@@ -0,0 +1,17 @@
++public class Order {
++    private int count = 0;
++    private int totalCost = 0;
++
++    public void addProduct(int productCount, int cost) {
++        count = count + productCount;
++        totalCost = totalCost + cost;
++    }
++
++    public int getProductCount() {
++        return count;
++    }
++
++    public int getTotalCost() {
++        return totalCost;
++    }
++}
+Index: ../Method/src/Method.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../Method/src/Method.iml b/../Method/src/Method.iml
+new file mode 100644
+--- /dev/null	(date 1731942627362)
++++ b/../Method/src/Method.iml	(date 1731942627362)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: ../Method/src/Printer.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../Method/src/Printer.java b/../Method/src/Printer.java
+new file mode 100644
+--- /dev/null	(date 1731942640045)
++++ b/../Method/src/Printer.java	(date 1731942640045)
+@@ -0,0 +1,42 @@
++public class Printer {
++
++    private String queue = "";
++    private int countPrintedPages = 0;
++    private int pagesInQueue = 0;
++
++    public void append(String name, String text, int countPages) {
++        queue = queue + "\n" + name + " - " + text;
++        pagesInQueue = pagesInQueue + countPages;
++        //countPrintedPages = countPrintedPages + countPages;
++    }
++
++    public void append(String text, int countPrintPages) {
++        append("Документ без имени", text, countPrintPages);
++    }
++    public void append(String text, String name) {
++        append(name, text, 1);
++    }
++
++    public void append(String text) {
++        append("Документ без имени", text, 1);
++    }
++
++    public void clear() {
++        queue = "";
++        pagesInQueue = 0;
++    }
++
++    public void print () {
++        System.out.println(queue);
++        countPrintedPages = countPrintedPages + pagesInQueue;
++        clear();
++    }
++
++    public int getPrintedPagesCount() {
++        return countPrintedPages;
++    }
++
++    public int getPendingPagesCount() {
++        return pagesInQueue;
++    }
++}
+Index: ../InternetMagazine23102024/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../InternetMagazine23102024/src/Main.java b/../InternetMagazine23102024/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1730808622068)
++++ b/../InternetMagazine23102024/src/Main.java	(date 1730808622068)
+@@ -0,0 +1,23 @@
++public class Main {
++    public static void main(String[] args) {
++        //TODO: методы вызываемые последовательно называются стеком вызовов
++        createBasket();
++
++        Session session = new Session();
++
++        System.out.println(Basket.getCount());
++
++    }
++
++    //TODO: статический метод доступен для класса в целом (НЕ ОБЪЕКТА) и может вызываться только из другого статического метода
++    public static void createBasket() {
++        Basket basket = new Basket("goods",120);
++    }
++
++    //TODO: если предполагается работа с методом через объекты, то такой метод должен быть не статический
++    //TODO: если работа с методами предполагается за пределами объекта и работает с переменными класса, то метод должен быть статическим
++
++
++    DeliveryOrder  deliveryOrder = new DeliveryOrder(Pedestrian.PEDESTRIAN,Fragile.NO,Cold.YES);
++
++}
+\ No newline at end of file
+Index: ../InternetMagazine23102024/src/Basket.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../InternetMagazine23102024/src/Basket.java b/../InternetMagazine23102024/src/Basket.java
+new file mode 100644
+--- /dev/null	(date 1731049909401)
++++ b/../InternetMagazine23102024/src/Basket.java	(date 1731049909401)
+@@ -0,0 +1,88 @@
++import java.time.Period;
++
++public class Basket {
++    private String items;
++    private int totalPrice = 0;
++    private int limit;
++
++    private static int count = 0; //TODO: статическая переменная доступна в самом классе, вызывается при обращении к классу.
++
++    private static int timeoute = getTimeOut();
++
++    //TODO: статическая инициализация
++    private static int getTimeOut() {
++        int secoundsInHour = 3600;
++        int hoursInDays = 24;
++        int daysInWeek  = 7;
++        int daysInMonth = 30;
++    }
++    //TODO: конструктор нужен для инциализации переменных b
++    public Basket() {
++        increaseCount(1);
++        items = "Список товаров:";
++        limit = 100000;
++    }
++
++    public Basket(int limit) {
++        this(); //TODO: вызываем конструктор пустой Basket()
++        this.limit = limit;
++    }
++
++    public Basket(String items, int totalPrice) {
++        this();
++        this.items = this.items + items;
++        this.totalPrice = totalPrice;
++    }
++
++    public static int getCount() {
++        return count;
++    }
++
++    public static void increaseCount(int count) {
++        Basket.count = Basket.count + count;
++    }
++
++    //TODO: перегрузка свойство создавать одноименные методы с разной сигнатурой
++    public void add(String name, int price) {
++        add(name, price, 1);
++    }
++
++    public void add(String name, int price, int count) {
++        if (contains(name)) {
++            return;
++        }
++        if (totalPrice + price >= limit) {
++            return;
++        }
++        items = items + "\n" + name + " - " +
++                count + " шт. - "+ price;
++        totalPrice = totalPrice + count * price;
++    }
++
++    public void add(int count, String name) {
++        add(name,500, count);
++    }
++
++    public void clear() {
++        items = "";
++        totalPrice = 0;
++    }
++
++    public int getTotalPrice() {
++        return totalPrice;
++    }
++
++    public boolean contains(String name) {
++            return items.contains(name);
++    }
++
++    public void print(String title) {
++        System.out.println(title);
++        if (items.isEmpty()) {
++            System.out.println("Корзина пуста");
++            System.out.println(items);
++        } else {
++            System.out.println(items);
++        }
++    }
++}
+Index: ../InternetMagazine23102024/.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../InternetMagazine23102024/.idea/misc.xml b/../InternetMagazine23102024/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1729672868639)
++++ b/../InternetMagazine23102024/.idea/misc.xml	(date 1729672868639)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" project-jdk-name="openjdk-23" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../InternetMagazine23102024/.idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../InternetMagazine23102024/.idea/.gitignore b/../InternetMagazine23102024/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1729672869169)
++++ b/../InternetMagazine23102024/.idea/.gitignore	(date 1729672869169)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml
+Index: ../InternetMagazine23102024/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../InternetMagazine23102024/.idea/vcs.xml b/../InternetMagazine23102024/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1729672868796)
++++ b/../InternetMagazine23102024/.idea/vcs.xml	(date 1729672868796)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../InternetMagazine23102024/.idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../InternetMagazine23102024/.idea/modules.xml b/../InternetMagazine23102024/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1729672868580)
++++ b/../InternetMagazine23102024/.idea/modules.xml	(date 1729672868580)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/InternetMagazine23102024.iml" filepath="$PROJECT_DIR$/InternetMagazine23102024.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: ../InternetMagazine23102024/src/DeliveryOrder.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../InternetMagazine23102024/src/DeliveryOrder.java b/../InternetMagazine23102024/src/DeliveryOrder.java
+new file mode 100644
+--- /dev/null	(date 1732795360154)
++++ b/../InternetMagazine23102024/src/DeliveryOrder.java	(date 1732795360154)
+@@ -0,0 +1,5 @@
++public class DeliveryOrder {
++    public DeliveryOrder(Pedestrian isPedestrian, Fragile isFragile, Cold isCold) {
++
++    }
++}
+Index: ../Method/.idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../Method/.idea/modules.xml b/../Method/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1732795812436)
++++ b/../Method/.idea/modules.xml	(date 1732795812436)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/Method.iml" filepath="$PROJECT_DIR$/Method.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: ../NumberAndDateExperiments/NumberAndDateExperiments.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../NumberAndDateExperiments/NumberAndDateExperiments.iml b/../NumberAndDateExperiments/NumberAndDateExperiments.iml
+new file mode 100644
+--- /dev/null	(date 1716116667988)
++++ b/../NumberAndDateExperiments/NumberAndDateExperiments.iml	(date 1716116667988)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: ../InternetMagazine23102024/src/Cold.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../InternetMagazine23102024/src/Cold.java b/../InternetMagazine23102024/src/Cold.java
+new file mode 100644
+--- /dev/null	(date 1732795360153)
++++ b/../InternetMagazine23102024/src/Cold.java	(date 1732795360153)
+@@ -0,0 +1,3 @@
++public enum Cold {
++    YES, NO
++}
+Index: ../Method/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../Method/.gitignore b/../Method/.gitignore
+new file mode 100644
+--- /dev/null	(date 1732795812434)
++++ b/../Method/.gitignore	(date 1732795812434)
+@@ -0,0 +1,29 @@
++### IntelliJ IDEA ###
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: ../Method/.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../Method/.idea/misc.xml b/../Method/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1732795812435)
++++ b/../Method/.idea/misc.xml	(date 1732795812435)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_19" default="true" project-jdk-name="openjdk-19" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../InternetMagazine23102024/src/Fragile.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../InternetMagazine23102024/src/Fragile.java b/../InternetMagazine23102024/src/Fragile.java
+new file mode 100644
+--- /dev/null	(date 1732795360154)
++++ b/../InternetMagazine23102024/src/Fragile.java	(date 1732795360154)
+@@ -0,0 +1,3 @@
++public enum Fragile {
++    YES, NO
++}
+Index: ../NumberAndDateExperiments/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../NumberAndDateExperiments/.gitignore b/../NumberAndDateExperiments/.gitignore
+new file mode 100644
+--- /dev/null	(date 1716116517883)
++++ b/../NumberAndDateExperiments/.gitignore	(date 1716116517883)
+@@ -0,0 +1,29 @@
++### IntelliJ IDEA ###
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: ../Method/Method.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../Method/Method.iml b/../Method/Method.iml
+new file mode 100644
+--- /dev/null	(date 1731942667796)
++++ b/../Method/Method.iml	(date 1731942667796)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: ../InternetMagazine23102024/src/Pedestrian.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../InternetMagazine23102024/src/Pedestrian.java b/../InternetMagazine23102024/src/Pedestrian.java
+new file mode 100644
+--- /dev/null	(date 1732795360155)
++++ b/../InternetMagazine23102024/src/Pedestrian.java	(date 1732795360155)
+@@ -0,0 +1,5 @@
++public enum Pedestrian {
++    PEDESTRIAN,
++    AUTO,
++    BIKE
++}
+Index: ../Method/.idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../Method/.idea/.gitignore b/../Method/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1732795812434)
++++ b/../Method/.idea/.gitignore	(date 1732795812434)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml
+Index: ../Method/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../Method/.idea/vcs.xml b/../Method/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1732795812436)
++++ b/../Method/.idea/vcs.xml	(date 1732795812436)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../InternetMagazine23102024/src/Order.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../InternetMagazine23102024/src/Order.java b/../InternetMagazine23102024/src/Order.java
+new file mode 100644
+--- /dev/null	(date 1732795360154)
++++ b/../InternetMagazine23102024/src/Order.java	(date 1732795360154)
+@@ -0,0 +1,7 @@
++public class Order {
++    public void addProduct(Product product) {
++        Product copy = new Product(product.getName(), product.getPrice());
++        //add copy to order
++
++    }
++}
+Index: ../InternetMagazine23102024/src/Product.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../InternetMagazine23102024/src/Product.java b/../InternetMagazine23102024/src/Product.java
+new file mode 100644
+--- /dev/null	(date 1732795360155)
++++ b/../InternetMagazine23102024/src/Product.java	(date 1732795360155)
+@@ -0,0 +1,33 @@
++public class Product {
++
++    public final String name;
++    public final int price;
++
++    Product(String name, int price) {
++        this.name = name;
++        this.price = price;
++    }
++
++    public Product setName(String name) {
++       return new Product(name, price);
++    }
++
++    public Product setPrice(int price) {
++        return new Product(name, price);
++    }
++    public String getName() {
++        return name;
++    }
++
++    public int getPrice() {
++        return price;
++    }
++
++    public String toString() {
++        return name + " - price " + price;
++    }
++    public void print() {
++        String info = name + " - price " + price;
++        System.out.println(info);
++    }
++}
+Index: ../InternetMagazine23102024/src/Session.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../InternetMagazine23102024/src/Session.java b/../InternetMagazine23102024/src/Session.java
+new file mode 100644
+--- /dev/null	(date 1732795360156)
++++ b/../InternetMagazine23102024/src/Session.java	(date 1732795360156)
+@@ -0,0 +1,5 @@
++public class Session {
++    public Session() {
++        Basket basket = new Basket("молоко",56);
++    }
++}
+Index: ../GearBox2024/src/GearBoxType.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../GearBox2024/src/GearBoxType.java b/../GearBox2024/src/GearBoxType.java
+new file mode 100644
+--- /dev/null	(date 1730808009723)
++++ b/../GearBox2024/src/GearBoxType.java	(date 1730808009723)
+@@ -0,0 +1,3 @@
++public enum GearBoxType {
++    AUTOMATIC, ROBOT, VARIATOR, MANUAL
++}
+Index: ../GearBox2024/GearBox2024.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../GearBox2024/GearBox2024.iml b/../GearBox2024/GearBox2024.iml
+new file mode 100644
+--- /dev/null	(date 1714644318000)
++++ b/../GearBox2024/GearBox2024.iml	(date 1714644318000)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: ../NumberAndDateExperiments/src/MoneyCalculator.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../NumberAndDateExperiments/src/MoneyCalculator.java b/../NumberAndDateExperiments/src/MoneyCalculator.java
+new file mode 100644
+--- /dev/null	(date 1732278511900)
++++ b/../NumberAndDateExperiments/src/MoneyCalculator.java	(date 1732278511900)
+@@ -0,0 +1,13 @@
++public class MoneyCalculator {
++
++    private static final int BANKNOTES_PER_PACK = 100;
++    private static final int PACKS_IN_CASSETTE = 20;
++
++    public int calculateCassetteCount(int banknoteCount) {
++
++        int banknotePack = banknoteCount / BANKNOTES_PER_PACK + (banknoteCount % BANKNOTES_PER_PACK == 0 ? 0 :1);
++
++        int banknoteCassette = banknotePack / PACKS_IN_CASSETTE + (banknotePack % PACKS_IN_CASSETTE == 0 ? 0 : 1);
++        return banknoteCassette;
++    }
++}
+Index: ../NumberAndDateExperiments/src/UsageAnalytics.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../NumberAndDateExperiments/src/UsageAnalytics.java b/../NumberAndDateExperiments/src/UsageAnalytics.java
+new file mode 100644
+--- /dev/null	(date 1732708835861)
++++ b/../NumberAndDateExperiments/src/UsageAnalytics.java	(date 1732708835861)
+@@ -0,0 +1,14 @@
++public class UsageAnalytics {
++    private int visitsCount;
++
++    public UsageAnalytics() {
++        visitsCount = 0;
++    }
++
++    public int countVisit() {
++        return ++visitsCount;
++    }
++
++
++}
++
+Index: ../NumberAndDateExperiments/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../NumberAndDateExperiments/src/Main.java b/../NumberAndDateExperiments/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1732709441441)
++++ b/../NumberAndDateExperiments/src/Main.java	(date 1732709441441)
+@@ -0,0 +1,27 @@
++import java.time.LocalDate;
++import java.time.Period;
++import java.time.temporal.ChronoUnit;
++
++public class Main {
++    public static void main(String[] args) {
++
++        MoneyCalculator moneyCalculator = new MoneyCalculator();
++        System.out.println(moneyCalculator.calculateCassetteCount(4001));
++
++        UsageAnalytics analytics = new UsageAnalytics();
++        analytics.countVisit();
++        analytics.countVisit();
++        int visits = analytics.countVisit();
++        System.out.println("Всего посещений: " + visits);
++
++        System.out.println(getPeriodFromJavaBirthday());
++    }
++
++    public static String getPeriodFromJavaBirthday() {
++        LocalDate dateOfBirth = LocalDate.of(1995,5,23);
++        Period period = dateOfBirth.until(LocalDate.now());
++
++        return period.getYears() + " years, " + period.getMonths() + " months, " +
++                period.getDays() + " days";
++    }
++}
+\ No newline at end of file
+Index: ../GearBox2024/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../GearBox2024/.gitignore b/../GearBox2024/.gitignore
+new file mode 100644
+--- /dev/null	(date 1714644316000)
++++ b/../GearBox2024/.gitignore	(date 1714644316000)
+@@ -0,0 +1,29 @@
++### IntelliJ IDEA ###
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: ../GearBox2024/src/GearBox.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../GearBox2024/src/GearBox.java b/../GearBox2024/src/GearBox.java
+new file mode 100644
+--- /dev/null	(date 1730808179534)
++++ b/../GearBox2024/src/GearBox.java	(date 1730808179534)
+@@ -0,0 +1,42 @@
++public class GearBox {
++    /**
++     * 0 - neutral
++     * -1 - rear
++     * 1-6
++     */
++    //TODO: константа класса это static final и обозначаются большими буквами в нижним подчеркиванием между слов
++    //        она может быть и видимой то есть public, но окажется публичной  неизменяемой и принадлежащей классу, а не объекту класса
++
++    private int gear = 0;   //TODO: приватная переменная доступна только в самом объекте и изменяемая в самом объекте, доступная для всех методов этого класса
++    public static final int MAX_GEAR = 6;   //TODO: публичная статическая и финализируемая переменная доступная за пределами класса, является неизменяемой и статическоцй, то есть константой. Имена таких переменных обозначаются большими буквами с нижним подчёркиванием между словами
++    public static final int MIN_GEAR = 1;
++
++    public final GearBoxType type;
++
++    public GearBox(GearBoxType type) {
++        this.type = type;
++    }
++
++    public GearBoxType getType() {
++        return type;
++    }
++    public void shiftUp() {
++        gear = gear < MAX_GEAR ? gear + 1: gear;
++    }
++
++    public void shiftDown() {
++        gear = gear < MIN_GEAR ? gear - 1 : gear;
++    }
++
++    public void switchRear() {
++        gear =  (gear > 1) ? gear : - 1;
++    }
++
++    public void switchNeutral() {
++        gear = 0;
++    }
++
++    public int getCurrentGear() {
++        return gear;
++    }
++}
+Index: ../GearBox2024/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../GearBox2024/src/Main.java b/../GearBox2024/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1730808298891)
++++ b/../GearBox2024/src/Main.java	(date 1730808298891)
+@@ -0,0 +1,8 @@
++public class Main {
++    public static void main(String[] args) {
++        GearBoxType type = GearBoxType.valueOf("ROBOT");
++        GearBox gearBox = new GearBox(type);
++        System.out.println(GearBox.MAX_GEAR);
++
++        System.out.println(gearBox.getType());    }
++}
+\ No newline at end of file
+Index: ../GearBox2024/.idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../GearBox2024/.idea/.gitignore b/../GearBox2024/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1732795812432)
++++ b/../GearBox2024/.idea/.gitignore	(date 1732795812432)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml
+Index: ../GearBox2024/.idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../GearBox2024/.idea/modules.xml b/../GearBox2024/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1732795812433)
++++ b/../GearBox2024/.idea/modules.xml	(date 1732795812433)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/GearBox2024.iml" filepath="$PROJECT_DIR$/GearBox2024.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: ../GearBox2024/.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../GearBox2024/.idea/misc.xml b/../GearBox2024/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1732795812433)
++++ b/../GearBox2024/.idea/misc.xml	(date 1732795812433)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_22" default="true" project-jdk-name="22" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../Method/src/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../Method/src/.idea/vcs.xml b/../Method/src/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1732795812438)
++++ b/../Method/src/.idea/vcs.xml	(date 1732795812438)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../GearBox2024/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../GearBox2024/.idea/vcs.xml b/../GearBox2024/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1732795812434)
++++ b/../GearBox2024/.idea/vcs.xml	(date 1732795812434)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../Method/src/.idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../Method/src/.idea/modules.xml b/../Method/src/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1732795812437)
++++ b/../Method/src/.idea/modules.xml	(date 1732795812437)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/Method.iml" filepath="$PROJECT_DIR$/Method.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: ../NumberAndDateExperiments/.idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../NumberAndDateExperiments/.idea/.gitignore b/../NumberAndDateExperiments/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1716116668638)
++++ b/../NumberAndDateExperiments/.idea/.gitignore	(date 1716116668638)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml
+Index: ../Method/src/.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../Method/src/.idea/misc.xml b/../Method/src/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1732795812437)
++++ b/../Method/src/.idea/misc.xml	(date 1732795812437)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_22" default="true" project-jdk-name="22" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../Method/src/.idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../Method/src/.idea/.gitignore b/../Method/src/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1732795812437)
++++ b/../Method/src/.idea/.gitignore	(date 1732795812437)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml
+Index: ../NumberAndDateExperiments/.idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../NumberAndDateExperiments/.idea/modules.xml b/../NumberAndDateExperiments/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1716116668004)
++++ b/../NumberAndDateExperiments/.idea/modules.xml	(date 1716116668004)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/NumberAndDateExperiments.iml" filepath="$PROJECT_DIR$/NumberAndDateExperiments.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: ../Method/gitignore.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../Method/gitignore.txt b/../Method/gitignore.txt
+new file mode 100644
+--- /dev/null	(date 1732795812503)
++++ b/../Method/gitignore.txt	(date 1732795812503)
+@@ -0,0 +1,29 @@
++### IntelliJ IDEA ###
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: ../Method/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../Method/src/Main.java b/../Method/src/Main.java
+new file mode 100644
+--- /dev/null	(date 1731942618444)
++++ b/../Method/src/Main.java	(date 1731942618444)
+@@ -0,0 +1,21 @@
++import javax.swing.undo.UndoableEditSupport;
++import java.time.LocalDateTime;
++import java.util.Formatter;
++import java.util.Scanner;
++
++public class Main {
++
++    public static void main(String[] args) {
++        Printer printer = new Printer();
++        printer.append("some text 133", "Справка");
++        printer.append("some text 210", 544);
++        System.out.println(printer.getPendingPagesCount());
++        printer.print();
++        printer.append("some text 8",530);
++        printer.clear();
++        printer.append("some text 23","Договор",312);
++        printer.append("some text 11");
++        printer.print();
++        System.out.println(printer.getPrintedPagesCount());
++    }
++}
+\ No newline at end of file
+Index: ../NumberAndDateExperiments/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../NumberAndDateExperiments/.idea/vcs.xml b/../NumberAndDateExperiments/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1716116668352)
++++ b/../NumberAndDateExperiments/.idea/vcs.xml	(date 1716116668352)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../InternetMagazine23102024/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../InternetMagazine23102024/.gitignore b/../InternetMagazine23102024/.gitignore
+new file mode 100644
+--- /dev/null	(date 1732795360153)
++++ b/../InternetMagazine23102024/.gitignore	(date 1732795360153)
+@@ -0,0 +1,29 @@
++### IntelliJ IDEA ###
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: ../NumberAndDateExperiments/.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../NumberAndDateExperiments/.idea/misc.xml b/../NumberAndDateExperiments/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1716116668205)
++++ b/../NumberAndDateExperiments/.idea/misc.xml	(date 1716116668205)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_22" default="true" project-jdk-name="22" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
