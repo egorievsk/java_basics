@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="DateAndTime">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/DateAndTime/out/DateAndTime.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
