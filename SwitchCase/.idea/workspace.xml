@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c7061b00-2a3e-49b8-b2ee-443954780473" name="Changes" comment="4" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;egorievsk&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/egorievsk/Encapsulation.git&quot;,
+    &quot;accountId&quot;: &quot;69bbaeda-e45e-422e-911c-ec1132be4634&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2fELNSBoMTbzpzSbLvbLByYffsv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "C:/Users/egori/IdeaProjects/SwitchCase/src/Main.java",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "project.scopes"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c7061b00-2a3e-49b8-b2ee-443954780473" name="Changes" comment="" />
+      <created>1713361249720</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713361249720</updated>
+    </task>
+    <task id="LOCAL-00001" summary="job with Object and class Object and whith loops">
+      <option name="closed" value="true" />
+      <created>1713369541625</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713369541625</updated>
+    </task>
+    <task id="LOCAL-00002" summary="job with Object and class Object and whith loops1">
+      <option name="closed" value="true" />
+      <created>1713369934578</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713369934578</updated>
+    </task>
+    <task id="LOCAL-00003" summary="job with Object and class Object and whith loops1">
+      <option name="closed" value="true" />
+      <created>1713370065457</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713370065457</updated>
+    </task>
+    <task id="LOCAL-00004" summary="job with Object and class Object and whith loops1">
+      <option name="closed" value="true" />
+      <created>1713370480693</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713370480693</updated>
+    </task>
+    <task id="LOCAL-00005" summary="3">
+      <option name="closed" value="true" />
+      <created>1713370693692</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713370693692</updated>
+    </task>
+    <task id="LOCAL-00006" summary="4">
+      <option name="closed" value="true" />
+      <created>1713370744140</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1713370744140</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="job with Object and class Object and whith loops" />
+    <MESSAGE value="job with Object and class Object and whith loops1" />
+    <MESSAGE value="3" />
+    <MESSAGE value="4" />
+    <option name="LAST_COMMIT_MESSAGE" value="4" />
+  </component>
+</project>
