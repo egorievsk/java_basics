@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/2.11 Booleans/2.11 Booleans.iml" filepath="$PROJECT_DIR$/2.11 Booleans/2.11 Booleans.iml" />
+      <module fileurl="file://$PROJECT_DIR$/2.9 RoadCamera/2.9 RoadCamera.iml" filepath="$PROJECT_DIR$/2.9 RoadCamera/2.9 RoadCamera.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AgeComparator/AgeComparator.iml" filepath="$PROJECT_DIR$/AgeComparator/AgeComparator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CofeeMachine/CofeeMachine.iml" filepath="$PROJECT_DIR$/CofeeMachine/CofeeMachine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IdeaProjects/Cofeemachine/Cofeemachine.iml" filepath="$PROJECT_DIR$/IdeaProjects/Cofeemachine/Cofeemachine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ComputerInfo/ComputerInfo.iml" filepath="$PROJECT_DIR$/ComputerInfo/ComputerInfo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IdeaProjects/ComputerInfo/ComputerInfo2.iml" filepath="$PROJECT_DIR$/IdeaProjects/ComputerInfo/ComputerInfo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cycles/Cycles.iml" filepath="$PROJECT_DIR$/Cycles/Cycles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cycles2024/Cycles2024.iml" filepath="$PROJECT_DIR$/Cycles2024/Cycles2024.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IdeaProjects/DateAndTime/DateAndTime.iml" filepath="$PROJECT_DIR$/IdeaProjects/DateAndTime/DateAndTime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DateAndTime/DateAndTime2.iml" filepath="$PROJECT_DIR$/DateAndTime/DateAndTime2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DateTime/DateTime.iml" filepath="$PROJECT_DIR$/DateTime/DateTime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DateTime-3/DateTime-3.iml" filepath="$PROJECT_DIR$/DateTime-3/DateTime-3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IdeaProjects/DateTime-3/DateTime-4.iml" filepath="$PROJECT_DIR$/IdeaProjects/DateTime-3/DateTime-4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IdeaProjects/DateTime/DateTime2.iml" filepath="$PROJECT_DIR$/IdeaProjects/DateTime/DateTime2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo/Demo.iml" filepath="$PROJECT_DIR$/Demo/Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DriverlessCar/DriverlessCar.iml" filepath="$PROJECT_DIR$/DriverlessCar/DriverlessCar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Encapsulation-1/Encapsulation/Encapsulation.iml" filepath="$PROJECT_DIR$/Encapsulation-1/Encapsulation/Encapsulation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Encapsulation/Encapsulation2.iml" filepath="$PROJECT_DIR$/Encapsulation/Encapsulation2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FactorialCalculator/FactorialCalculator.iml" filepath="$PROJECT_DIR$/FactorialCalculator/FactorialCalculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FeelingStation/FeelingStation.iml" filepath="$PROJECT_DIR$/FeelingStation/FeelingStation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FilingStation/FilingStation.iml" filepath="$PROJECT_DIR$/FilingStation/FilingStation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IdeaProjects/FilingStation/FilingStation2.iml" filepath="$PROJECT_DIR$/IdeaProjects/FilingStation/FilingStation2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ForCycles/ForCycles.iml" filepath="$PROJECT_DIR$/ForCycles/ForCycles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GearBox2024/GearBox2024.iml" filepath="$PROJECT_DIR$/GearBox2024/GearBox2024.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GuessTheNumber/GuessTheNumber.iml" filepath="$PROJECT_DIR$/GuessTheNumber/GuessTheNumber.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/IdeaProjects.iml" filepath="$PROJECT_DIR$/.idea/IdeaProjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InternetMagazine2024/InternetMagazine2024.iml" filepath="$PROJECT_DIR$/InternetMagazine2024/InternetMagazine2024.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InternetMagazine23102024/InternetMagazine23102024.iml" filepath="$PROJECT_DIR$/InternetMagazine23102024/InternetMagazine23102024.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson 4.02.1/Lesson 4.02.1.iml" filepath="$PROJECT_DIR$/Lesson 4.02.1/Lesson 4.02.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson 4.02.2/Lesson 4.02.2.iml" filepath="$PROJECT_DIR$/Lesson 4.02.2/Lesson 4.02.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IdeaProjects/Lesson2/Lesson2.iml" filepath="$PROJECT_DIR$/IdeaProjects/Lesson2/Lesson2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson2/Lesson3.iml" filepath="$PROJECT_DIR$/Lesson2/Lesson3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson_Cycles/Lesson_Cycles.iml" filepath="$PROJECT_DIR$/Lesson_Cycles/Lesson_Cycles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson_Method/Lesson_Method.iml" filepath="$PROJECT_DIR$/Lesson_Method/Lesson_Method.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ObjectsAndClasses_Methods/ObjectsAndClasses_Methods.iml" filepath="$PROJECT_DIR$/ObjectsAndClasses_Methods/ObjectsAndClasses_Methods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Encapsulation-1/ObjectsAndClasses_Methods/ObjectsAndClasses_Methods2.iml" filepath="$PROJECT_DIR$/Encapsulation-1/ObjectsAndClasses_Methods/ObjectsAndClasses_Methods2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RoadController/RoadController.iml" filepath="$PROJECT_DIR$/RoadController/RoadController.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SwimmingPool/SwimmingPool.iml" filepath="$PROJECT_DIR$/SwimmingPool/SwimmingPool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SwitchCase/SwitchCase.iml" filepath="$PROJECT_DIR$/SwitchCase/SwitchCase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/internetMagzin/internetMagzin.iml" filepath="$PROJECT_DIR$/internetMagzin/internetMagzin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/internetShop/internetShop.iml" filepath="$PROJECT_DIR$/internetShop/internetShop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/untitled/untitled.iml" filepath="$PROJECT_DIR$/untitled/untitled.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IdeaProjects/untitled1/untitled1.iml" filepath="$PROJECT_DIR$/IdeaProjects/untitled1/untitled1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IdeaProjects/untitled/untitled2.iml" filepath="$PROJECT_DIR$/IdeaProjects/untitled/untitled2.iml" />
+    </modules>
+  </component>
+</project>
