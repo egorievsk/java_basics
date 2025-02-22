@@ -81,6 +81,7 @@ public class Main {
         При переопределении методов можно расширять уровень доступа, а сужать нельзя.
         Например, в классе Bus метод powerReserv имеет модификатор protected, в классе EclectricBus он переопределен с модификатором public
          */
+        git
         //Modificator_access.png
     }
 }
