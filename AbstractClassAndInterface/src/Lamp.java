@@ -1,5 +1,5 @@
 
-public class Lamp extends LightingDevace{
+public class Lamp extends LightingDevace {
 
     public Lamp(int power) {
         super(power);

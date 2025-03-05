@@ -1,4 +1,5 @@
-public abstract class LightingDevace {
+public abstract class LightingDevace
+        implements ElectricDevice, Comparable {
     public static final double MAX_BRIGHTNESS = 1D;
     public static final double MIN_BRIGHTNESS = 0D;
 
@@ -7,6 +8,21 @@ public abstract class LightingDevace {
 
     public LightingDevace(int power) {
         this.power = power;
+    }
+
+    @Override
+    public boolean isSwitchedOn() {
+        return brightness > 0;
+    }
+
+    @Override
+    public void switchOn() {
+        setBrightness(MAX_BRIGHTNESS);
+    }
+
+    @Override
+    public void switchOff() {
+        setBrightness(MIN_BRIGHTNESS);
     }
 
     public void setBrightness(double level) {
@@ -28,5 +44,15 @@ public abstract class LightingDevace {
         setBrightness(changed);
     }
 
-    public abstract double getEnergyConsumption();
+    @Override
+    public int compareTo(Object o) {
+        LightingDevace lightingDevace = (LightingDevace) o;
+        return Integer.compare(power, lightingDevace.power);
+    }
+
+    @Override
+    public String toString() {
+        return getClass().getName() + " with power: " + power;
+    }
+
 }
