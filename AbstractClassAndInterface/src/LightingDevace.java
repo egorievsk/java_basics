@@ -54,5 +54,4 @@ public abstract class LightingDevace
     public String toString() {
         return getClass().getName() + " with power: " + power;
     }
-
 }

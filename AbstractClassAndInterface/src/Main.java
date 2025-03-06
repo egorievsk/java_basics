@@ -1,4 +1,7 @@
+import javax.lang.model.type.PrimitiveType;
+import java.awt.*;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 
 import static java.net.Proxy.Type.HTTP;
@@ -35,6 +38,10 @@ public class Main {
                         Сериализация и десериализация
                         Сериализация - процесс преобразования объекта в последовательность байтов (например для сохранения в файл)
                         Десериализация - процесс восстановления объекта из последовательности байтов (из файла).
+
+                        ПОЛИМОРФИЗМ:
+                            многообразие форм, в наших устройствах имеется множество одинаковых методов, но реализующих разный код
+                            
         */
 
         ArrayList<Lamp> lamps = new ArrayList<>();
@@ -47,6 +54,11 @@ public class Main {
         for (Lamp lamp : lamps) {
             System.out.println(lamp);
         }
+
+        Printer printer = new SimplePrinter();
+        printer.printBlackAndWhite();
+        printer.printColor();
+
 
     }
 }
