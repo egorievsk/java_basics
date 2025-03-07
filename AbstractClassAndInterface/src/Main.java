@@ -1,8 +1,6 @@
 import javax.lang.model.type.PrimitiveType;
 import java.awt.*;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
+import java.util.*;
 
 import static java.net.Proxy.Type.HTTP;
 import static javax.swing.text.html.FormSubmitEvent.MethodType.POST;
@@ -41,10 +39,24 @@ public class Main {
 
                         ПОЛИМОРФИЗМ:
                             многообразие форм, в наших устройствах имеется множество одинаковых методов, но реализующих разный код
-                            
+                        ВЛОЖЕННЫЕ КЛАССЫ:
+                            -статические вложенные классы, созданные внутри другого класса,
+                            -нестатические вложенные классы, созданные внутри другого класса,
+                            -классы созданные внутри метода, локальные классы. class Chandelier
+                            -анонимные классы.
+                        Зачем нужны вложенные классы:
+                            -для построения логичной архитектуры,
+                            -для усиления инкапсуляции,
+                            -для улучшения поддерживаемости.
+
         */
 
         ArrayList<Lamp> lamps = new ArrayList<>();
+
+        Lamp lamp1 = new Lamp(100);
+        //использование вложенного класса типа enum
+        lamp1.setType(Lamp.Type.LUMINESCENT);
+
         lamps.add(new Lamp(100));
         lamps.add(new Lamp(20));
         lamps.add(new Lamp(40));
@@ -58,6 +70,22 @@ public class Main {
         Printer printer = new SimplePrinter();
         printer.printBlackAndWhite();
         printer.printColor();
+
+        SmartHouse.localClass obj = new SmartHouse.localClass();
+
+        TreeSet<LightingDevace> lightingDevices = new TreeSet<>(new Comparator<LightingDevace>() {
+            @Override
+            public int compare(LightingDevace o1, LightingDevace o2) {
+                return Integer.compare(o1.getPower(),o2.getPower());
+            }
+        });
+
+        LightingDevace device = new LightingDevace(400) {
+            @Override
+            public double getEnergyConsumption() {
+                return power * brightness;
+            }
+        };
 
 
     }

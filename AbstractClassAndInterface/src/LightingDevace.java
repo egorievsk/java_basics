@@ -39,6 +39,10 @@ public abstract class LightingDevace
         return brightness;
     }
 
+    public int getPower() {
+        return power;
+    }
+
     public void changeBrightenss(double rate) {
         double changed = brightness + brightness * rate;
         setBrightness(changed);

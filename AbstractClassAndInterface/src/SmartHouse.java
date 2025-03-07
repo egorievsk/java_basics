@@ -39,4 +39,8 @@ public class SmartHouse {
         devices.add(new Chandelier(250, 5));
         devices.add(new Chandelier(120, 3));
     }
+
+    static class localClass {
+
+    }
 }
